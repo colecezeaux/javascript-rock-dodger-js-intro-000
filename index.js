@@ -71,13 +71,8 @@ function createRock(x) {
    * Now that we have a rock, we'll need to append
    * it to GAME and move it downwards.
    */
-   function step() {
-     rock.style.top = `${top += 2}px`
+   GAME.appendChild(rock)
 
-     if (top < 360) {
-       window.requestAnimationFrame(step)
-     }
-   }
 
   /**
    * This function moves the rock. (2 pixels at a time
