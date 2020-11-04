@@ -157,6 +157,8 @@ function moveDodger(e) {
     if (e.which === 39) {
       moveDodgerRight()
     }
+    e.preventDefault()
+    e.stopPropagation()
   })
 
   document.addEventListener('keydown', function(e) {
