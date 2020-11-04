@@ -157,6 +157,7 @@ function moveDodger(e) {
     if (e.which === 39) {
       return moveDodgerRight()
     }
+    return;
   })
 
   e.preventDefault()
