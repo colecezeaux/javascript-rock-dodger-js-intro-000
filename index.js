@@ -147,7 +147,7 @@ function moveDodger(e) {
    * we've declared for you above.)
    * And be sure to use the functions declared below!
    */
-   document.addEventListener('keyup', function(e) {
+   document.addEventListener('keypress', function(e) {
      if (e.which === 37) {
        moveDodgerLeft()
      }
