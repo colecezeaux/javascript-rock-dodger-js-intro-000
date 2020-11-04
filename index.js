@@ -175,8 +175,8 @@ function moveDodgerLeft() {
 
  if (left > 0) {
    dodger.style.left = `${left - 4}px`
-   e.preventDefault()
-   e.stopPropagation()
+   event.preventDefault()
+   event.stopPropagation()
  }
 }
 
@@ -191,8 +191,8 @@ function moveDodgerRight() {
 
  if (right > 0) {
    dodger.style.right = `${right - 4}px`
-   e.preventDefault()
-   e.stopPropagation()
+   event.preventDefault()
+   event.stopPropagation()
  }
 }
 
