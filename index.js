@@ -153,7 +153,7 @@ function moveDodger(e) {
        e.stopPropagation
      } else {
        moveDodgerLeft()
-       
+
      }
  })
 
@@ -163,7 +163,7 @@ function moveDodger(e) {
       e.stopPropagation
     } else {
       moveDodgerRight()
-      
+
     }
   })
 
