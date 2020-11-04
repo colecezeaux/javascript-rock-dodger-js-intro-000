@@ -159,17 +159,9 @@ function moveDodger(e) {
     }
   })
 
-  window.addEventListener("keydown", function (e) {
-    if (event.defaultPrevented) {
-      return; // Do nothing if the event was already processed
-    }
-    if (e.stopPropagation) {
-      return;
-    }
-
   e.preventDefault()
   e.stopPropagation()
-})
+
 }
 
 
