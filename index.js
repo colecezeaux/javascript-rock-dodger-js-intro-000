@@ -149,13 +149,13 @@ function moveDodger(e) {
    */
    document.addEventListener('keydown', function(e) {
      if (e.which === 37) {
-       moveDodgerLeft()
+       return moveDodgerLeft()
      }
  })
 
   document.addEventListener('keydown', function(e) {
     if (e.which === 39) {
-      moveDodgerRight()
+      return moveDodgerRight()
     }
   })
   e.preventDefault()
