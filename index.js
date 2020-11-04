@@ -147,7 +147,7 @@ function moveDodger(e) {
    * we've declared for you above.)
    * And be sure to use the functions declared below!
    */
-   document.addEventListener('keydown', function(e) {
+   document.addEventListener('keyup', function(e) {
      if (e.which === 37) {
        moveDodgerLeft()
      }
@@ -183,7 +183,7 @@ function moveDodgerRight() {
    * This function should move DODGER to the right
    * (mabye 4 pixels?). Use window.requestAnimationFrame()!
    */
-   var rightNumbers = positionToInteger(dodger.style.right.replace('px', ''))
+   var rightNumbers = dodger.style.right.replace('px', '')
  var right = parseInt(rightNumbers, 10)
 
  if (right > 0) {
