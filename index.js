@@ -151,6 +151,7 @@ function moveDodger(e) {
    document.addEventListener('keydown', function(e) {
      if (e.which === 37) {
        moveDodgerLeft()
+<<<<<<< HEAD
      }
  })
 
@@ -162,6 +163,11 @@ function moveDodger(e) {
 
  e.preventDefault()
  e.stopPropagation()
+=======
+ }
+ })
+
+>>>>>>> d3d2657d0b0bd5001ee14451fec678bebb28b8c8
 }
 
 function moveDodgerLeft() {
@@ -171,11 +177,21 @@ function moveDodgerLeft() {
    * (mabye 4 pixels?). Use window.requestAnimationFrame()!
    */
    var leftNumbers = dodger.style.left.replace('px', '')
+<<<<<<< HEAD
  var left = parseInt(leftNumbers, 10)
 
  if (left > 0) {
    dodger.style.left = `${left - 4}px`
  }
+=======
+   var left = parseInt(leftNumbers, 10)
+
+   if (left < 180) {
+     window.requestAnimationFrame(moveDodgerLeft)
+     dodger.style.left = `${left - 4}px`
+   }
+   window.requestAnimationFrame(moveDodgerLeft)
+>>>>>>> d3d2657d0b0bd5001ee14451fec678bebb28b8c8
 }
 
 function moveDodgerRight() {
