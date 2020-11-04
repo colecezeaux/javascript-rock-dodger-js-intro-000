@@ -159,6 +159,9 @@ function moveDodger(e) {
     }
   })
 
+  e.preventDefault
+  e.stopPropagation
+
   window.addEventListener("keydown", function (event) {
     if (event.defaultPrevented) {
       return; // Should do nothing if the default action has been cancelled
