@@ -81,12 +81,12 @@ function createRock(x) {
 function moveRock() {
     // implement me!
     // (use the comments below to guide you!)
+    rock.style.top = `${top += 2}px`;
     /**
      * If a rock collides with the DODGER,
      * we should call endGame().
      */
-      const rockBottom = positionToInteger(rock.style.bottom)
-     if (checkCollision()) {
+     if (checkCollision(rock) === true) {
        return endGame()
      }
     /**
@@ -94,8 +94,8 @@ function moveRock() {
      * the GAME, we want to move it again.
      */
 
-      else if (rockBottom !== 0) {
-        return step()
+      else if (top < GAME_HEIGHT) {
+        window.requestAnimationFrame(moveRock);
       }
 
     /**
@@ -103,7 +103,7 @@ function moveRock() {
      * we should remove the rock from the DOM.
      */
      else {
-       delete rock
+       rock.remove();
      }
   }
 
