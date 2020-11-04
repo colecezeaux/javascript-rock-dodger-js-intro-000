@@ -153,7 +153,7 @@ window.addEventListener("keydown", function (e) {
     return; // Do nothing if the event was already processed
   }
 
-  switch (event.key) {
+  switch (e.key) {
     case "Left": // IE/Edge specific value
     case "LEFT_ARROW":
       // Do something for "left arrow" key press.
