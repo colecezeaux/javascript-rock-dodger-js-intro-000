@@ -172,11 +172,11 @@ function moveDodgerLeft() {
    */
    var leftNumbers = dodger.style.left.replace('px', '')
  var left = parseInt(leftNumbers, 10)
- e.preventDefault()
- e.stopPropagation()
 
  if (left > 0) {
    dodger.style.left = `${left - 4}px`
+   e.preventDefault()
+   e.stopPropagation()
  }
 }
 
@@ -188,11 +188,11 @@ function moveDodgerRight() {
    */
    var rightNumbers = dodger.style.right.replace('px', '')
  var right = parseInt(rightNumbers, 10)
- e.preventDefault()
- e.stopPropagation()
 
  if (right > 0) {
    dodger.style.right = `${right - 4}px`
+   e.preventDefault()
+   e.stopPropagation()
  }
 }
 
