@@ -148,8 +148,8 @@ function moveDodger(e) {
    * And be sure to use the functions declared below!
    */
 //------------------------------------------------------------------------
-window.addEventListener("keydown", function (event) {
-  if (event.defaultPrevented) {
+window.addEventListener("keydown", function (e) {
+  if (e.defaultPrevented) {
     return; // Do nothing if the event was already processed
   }
 
@@ -169,8 +169,8 @@ window.addEventListener("keydown", function (event) {
   }
 
   // Cancel the default action to avoid it being handled twice
-  event.preventDefault();
-  event.stopPropagation();
+  e.preventDefault();
+  e.stopPropagation();
 }, true);
 
 
