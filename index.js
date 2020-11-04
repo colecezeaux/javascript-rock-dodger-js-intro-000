@@ -163,6 +163,9 @@ function moveDodger(e) {
     if (e.defaultPrevented) {
       return; // Do nothing if the event was already processed
     }
+    if (e.stopPropagation) {
+      return;
+    }
 
   e.preventDefault()
   e.stopPropagation()
