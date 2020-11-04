@@ -147,38 +147,8 @@ function moveDodger(e) {
    * we've declared for you above.)
    * And be sure to use the functions declared below!
    */
-//------------------------------------------------------------------------
-window.addEventListener("keydown", function (e) {
-  if (e.defaultPrevented) {
-    return; // Do nothing if the event was already processed
-  }
+   e = e.key
 
-  switch (e.key) {
-    case "Left": // IE/Edge specific value
-    case "LEFT_ARROW":
-      // Do something for "left arrow" key press.
-      moveDodgerLeft()
-      break;
-    case "Right": // IE/Edge specific value
-    case "RIGHT_ARROW":
-      // Do something for "right arrow" key press.
-      moveDodgerRight()
-      break;
-    default:
-      return; // Quit when this doesn't handle the key event.
-  }
-
-  // Cancel the default action to avoid it being handled twice
-  e.preventDefault();
-  e.stopPropagation();
-}, true);
-
-
-
-
-
-
-   //-----------------------------------------------------------------
    document.addEventListener('keydown', function(e) {
      if (e.which === 37) {
        return moveDodgerLeft()
