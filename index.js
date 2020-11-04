@@ -159,8 +159,20 @@ function moveDodger(e) {
     }
   })
 
- e.preventDefault()
- e.stopPropagation()
+  document.addEventListener('keydown', function(e) {
+    if (e.which !== 37) {
+      e.preventDefault()
+      e.stopPropagation()
+    }
+  })
+
+  document.addEventListener('keydown', function(e) {
+    if (e.which !== 39) {
+      e.preventDefault()
+      e.stopPropagation()
+    }
+  })
+  
 }
 
 
