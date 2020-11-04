@@ -158,6 +158,12 @@ function moveDodger(e) {
       return moveDodgerRight()
     }
   })
+
+  window.addEventListener("keydown", function (e) {
+    if (e.defaultPrevented) {
+      return; // Do nothing if the event was already processed
+    }
+  
   e.preventDefault()
   e.stopPropagation()
 }
